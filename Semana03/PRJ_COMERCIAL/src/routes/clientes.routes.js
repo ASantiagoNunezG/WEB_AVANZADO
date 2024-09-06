@@ -20,7 +20,7 @@ router.get('/add', (req,res)=>{
 
 router.post('/add', async(req, res)=>{
     try{
-        res.redirect('/list');
+        res.redirect('/list?message=Cliente agregado exitosamente');
     }
     catch(err){
         res.status(500).json({message:err.message});
@@ -35,7 +35,8 @@ router.get('/edit', (req,res)=>{
 
 router.post('/edit', async(req, res)=>{
     try{
-        res.redirect('/list');
+        
+        res.redirect('/list?message=Cliente actualizado correctamente');
     }
     catch(err){
         res.status(500).json({message:err.message});
