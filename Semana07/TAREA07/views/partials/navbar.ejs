@@ -1,0 +1,24 @@
+<!-- partials/navbar.ejs -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="/"><img class="logo" src="images/perfil11.jpg" alt="logo"></a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/insumos">Insumos</a></li>
+        <li><a href="/proveedores">Proveedores</a></li>
+    </ul>
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+</script>

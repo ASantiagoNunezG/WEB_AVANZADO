@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Proveedor</title>
+</head>
+<body>
+    <% include ../partials/navbar %>
+    <h1>Editar Proveedor</h1>
+    <form action="/proveedores/update/<%= proveedor._id %>" method="POST">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" value="<%= proveedor.nombre %>" required>
+        <label>Dirección:</label>
+        <input type="text" name="direccion" value="<%= proveedor.direccion %>" required>
+        <label>Teléfono:</label>
+        <input type="text" name="telefono" value="<%= proveedor.telefono %>" required>
+        <label>Email:</label>
+        <input type="email" name="email" value="<%= proveedor.email %>" required>
+        <button type="submit">Actualizar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/* Estilo para el Navbar */
+/* Estilos Generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Fondo claro */
+    color: #333; /* Color de texto */
+}
+
+.container {
+    text-align: center;
+    max-width: 1200px; /* Ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px;
+}
+
+/* Estilo para la Tabla */
+.styled-table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Eliminar espacio entre celdas */
+    margin: 20px 0; /* Espacio alrededor de la tabla */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.styled-table thead tr {
+    background-color: #FFB74D; /* Color cálido para el encabezado */
+    color: #ffffff; /* Color del texto del encabezado */
+    text-align: left; /* Alineación a la izquierda */
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd; /* Línea entre filas */
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f2f2f2; /* Color alterno para filas */
+}
+
+.styled-table tbody tr:hover {
+    background-color: #FFC107; /* Color al pasar el mouse */
+    color: #ffffff; /* Color del texto al pasar el mouse */
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .styled-table {
+        font-size: 14px; /* Tamaño de fuente más pequeño en dispositivos móviles */
+    }
+    
+    .styled-table th,
+    .styled-table td {
+        padding: 10px; /* Menor espaciado interno */
+    }
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFB74D; /* Color cálido */
+    padding: 1rem 2rem;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    font-size: 1.8rem;
+    color: #ffffff; /* Color del texto */
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Animaciones */
+}
+
+.nav-links a:hover {
+    color: #FFC107; /* Color al pasar el mouse */
+    transform: scale(1.1); /* Efecto de escala */
+}
+
+/* Estilos para el botón de menú móvil */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #ffffff; /* Color del menú móvil */
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px; /* Altura del navbar */
+        right: 0;
+        background-color: #FFB74D;
+        flex-direction: column;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s ease;
+        opacity: 0; /* Inicialmente oculto */
+        gap: 1rem;
+    }
+
+    .nav-links.show {
+        height: auto; /* Cambia a auto para mostrar */
+        opacity: 1; /* Mostrar */
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+/* Estilos Generales */
+
+.container2 {
+    display: flex; /* Uso de flexbox para diseño horizontal */
+    align-items: center; /* Alinear elementos verticalmente */
+    max-width: 1200px; /* Ancho máximo */
+    margin: 4.5% auto; /* Centra el contenedor */
+    padding: 20px;
+}
+
+.image-container {
+    flex: 0 0 60%; /* Ocupa el 60% del contenedor */
+}
+
+.store-image {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+}
+.logo {
+    margin-top: 1%;
+    margin-left: 5%;
+    width: 25%;
+    height: auto;
+    border-radius: 2px;
+}
+
+.description-container2 {
+    flex: 0 0 40%; /* Ocupa el 40% del contenedor */
+    padding-left: 20px; /* Espaciado a la izquierda */
+}
+
+.description-container2 h1 {
+    color: #FFB74D; /* Color cálido para el encabezado */
+}
+
+h2 {
+    color: #FFC107; /* Color cálido para subtítulos */
+}
+
+/* Estilo del Footer */
+footer {
+    background-color: #FFB74D; /* Color de fondo del pie de página */
+    text-align: center; /* Centrar texto */
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+.footer p {
+    margin: 0; /* Eliminar margen */
+    color: #ffffff; /* Color de texto blanco */
+}

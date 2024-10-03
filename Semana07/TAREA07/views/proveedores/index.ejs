@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedores</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <%- include('../partials/navbar') %>
+        <div class="container">
+            <h1>Lista de Proveedores</h1>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>ID Proveedor</th>
+                        <th>Nombres</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% proveedores.forEach(proveedor=> { %>
+                        <tr>
+                            <td>
+                                <%= proveedor.idproveedor%>
+                            </td>
+                            <td>
+                                <%= proveedor.nombrecia%>
+                            </td>
+                        </tr>
+
+                        <% }); %>
+                </tbody>
+            </table>
+        </div>
+</body>
+
+</html>

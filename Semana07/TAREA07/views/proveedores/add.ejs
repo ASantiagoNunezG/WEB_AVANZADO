@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agregar Proveedor</title>
+</head>
+<body>
+    <% include ../partials/navbar %>
+    <h1>Agregar Proveedor</h1>
+    <form action="/proveedores/add" method="POST">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+        <label>Dirección:</label>
+        <input type="text" name="direccion" required>
+        <label>Teléfono:</label>
+        <input type="text" name="telefono" required>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>

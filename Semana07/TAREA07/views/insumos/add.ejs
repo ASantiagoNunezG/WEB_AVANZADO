@@ -1,0 +1,16 @@
+<%- include('../partials/navbar') %>
+<h1>Agregar Insumo</h1>
+<form action="/insumos" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" required>
+    
+    <label for="proveedor_id">Proveedor:</label>
+    <select name="proveedor_id">
+        <% proveedores.forEach(proveedor => { %>
+            <option value="<%= proveedor._id %>"><%= proveedor.nombre %></option>
+        <% }) %>
+    </select>
+    
+    <button type="submit">Agregar</button>
+</form>
+<a href="/insumos">Volver a la lista de insumos</a>
