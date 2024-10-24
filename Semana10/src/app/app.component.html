@@ -1,20 +1,3 @@
-<ul *ngFor="let cargo of cargos">
-    <li [ngClass]="'marco , texto'">{{cargo}}</li>
-</ul>
-<br>
-<ul *ngFor="let cargo of cargos">
-    <li [ngClass]="['marco' , 'texto']">{{cargo}}</li>
-</ul>
-<br>
-<ul *ngFor="let cargo of cargos">
-    <li [ngClass]="{'marco': true}">{{cargo}}</li>
-</ul>
-<br>
-<ul *ngFor="let cargo of cargos">
-    <li [ngClass]="{'marco':cargo === 'Diseñador'}">{{cargo}}</li>
-    
-</ul>
-<ul *ngFor="let cargo of cargos">
-    <li [ngStyle]="{color:'red'}">{{cargo}}</li>
-    
+<ul *ngFor="let persona of personas, let i = index">
+    <li>{{i+1}} Nombre: {{persona.nombre}}, edad: {{persona.edad}}</li>
 </ul>
