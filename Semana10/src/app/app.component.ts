@@ -12,10 +12,12 @@ import { Persona } from './persona';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  personas:Persona[] =[
+
+  dia?:string;
+  /*personas:Persona[] =[
     {nombre: "Nuñez", edad:25},
     {nombre: "Abraham", edad:21},
-  ]
+  ]*/
   //cargos = ['CEO','Programador', 'Analista', 'Administrador de BD', 'Diseñador'];
   nombre!:string;
   title = 'apli01Nunez';

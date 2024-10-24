@@ -1,3 +1,15 @@
-<ul *ngFor="let persona of personas, let i = index">
-    <li>{{i+1}} Nombre: {{persona.nombre}}, edad: {{persona.edad}}</li>
-</ul>
+<br>
+<input type="text" #newDay>
+<br><br>
+<button (click)="dia = newDay.value">Mostrar día</button>
+<br><br>
+<div [ngSwitch]="dia">
+    <span *ngSwitchCase="'1'">Lunes</span>
+    <span *ngSwitchCase="'2'">Martes</span>
+    <span *ngSwitchCase="'3'">Miércoles</span>
+    <span *ngSwitchCase="'4'">Jueves</span>
+    <span *ngSwitchCase="'5'">Viernes</span>
+    <span *ngSwitchCase="'6'">Sábado</span>
+    <span *ngSwitchCase="'7'">Domingo</span>
+    <span *ngSwitchDefault="'8'">Valor no válido</span>
+</div>
