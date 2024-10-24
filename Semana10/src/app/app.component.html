@@ -1,2 +1,20 @@
-<label for="">Ingrese su nombre:{{nombre}}</label><br>
-<input type="text" [(ngModel)]="nombre">
+<ul *ngFor="let cargo of cargos">
+    <li [ngClass]="'marco , texto'">{{cargo}}</li>
+</ul>
+<br>
+<ul *ngFor="let cargo of cargos">
+    <li [ngClass]="['marco' , 'texto']">{{cargo}}</li>
+</ul>
+<br>
+<ul *ngFor="let cargo of cargos">
+    <li [ngClass]="{'marco': true}">{{cargo}}</li>
+</ul>
+<br>
+<ul *ngFor="let cargo of cargos">
+    <li [ngClass]="{'marco':cargo === 'Diseñador'}">{{cargo}}</li>
+    
+</ul>
+<ul *ngFor="let cargo of cargos">
+    <li [ngStyle]="{color:'red'}">{{cargo}}</li>
+    
+</ul>
