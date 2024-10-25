@@ -10,5 +10,12 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Interpolación';
+  title = 'Apli01';
+  valor = "Nuñez Garcia A. Santiago";
+  tipo = "password";
+  img = "assets/angular.png";
+  enlace = "https://youtube.com";
+  clase01 = "azul";
+  clase02 = "rojo";
+  alttxt = "Imagen increible";
 }
