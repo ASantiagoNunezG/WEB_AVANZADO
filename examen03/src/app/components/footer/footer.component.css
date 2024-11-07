@@ -1,0 +1,116 @@
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 280px; /* Para que las secciones no sean más estrechas que esto */
+    margin-bottom: 20px;
+  }
+  
+  .first {
+    text-align: center;
+  }
+  
+  .first h3 {
+    font-size: 24px;
+  }
+  
+  .first p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .social-icons {
+    display: flex; /* Organiza los iconos en fila horizontal */
+    justify-content: center; /* Centra los iconos */
+    gap: 20px; /* Espacio entre los iconos */
+  }
+  
+  .social-icons i, .social-icons svg {
+    font-size: 30px; /* Tamaño del icono */
+    color: #fff; /* Color de los iconos */
+    transition: transform 0.3s ease; /* Efecto de transición al hacer hover */
+  }
+  
+  .social-icons i:hover, .social-icons svg:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el mouse */
+  }
+  
+  
+  .second {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna en la primera fila */
+    grid-template-rows: auto auto; /* Dos filas */
+    gap: 10px;
+    justify-items: center;
+  }
+  
+  .card:first-child {
+    grid-column: span 2; /* Este card ocupará el ancho de dos columnas */
+  }
+  
+  .card {
+    background-color: #b6b6b6;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 250px; /* Limita el tamaño de los cards */
+  }
+  
+  .card i {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+  }
+  
+  
+  .third {
+    text-align: center;
+  }
+  
+  .third h3 {
+    font-size: 24px;
+  }
+  
+  .third ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .third ul li {
+    margin: 10px 0;
+  }
+  
+  .third ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .third ul li a:hover {
+    color: #007bff;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  

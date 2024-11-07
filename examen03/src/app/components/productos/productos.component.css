@@ -1,0 +1,24 @@
+.productos-container {
+  padding: 50px 0;
+  background-color: #f8f9fa; /* Fondo gris claro */
+}
+
+.card {
+  border: solid rgb(199, 197, 197) 1px;
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* Suaviza el cambio de tamaño */
+}
+
+.card:hover {
+  transform: scale(1.02); /* Agranda el card al pasar el mouse */
+}
+
+.card-img-top {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.text-center h2,
+.text-center p {
+  color: black;
+}

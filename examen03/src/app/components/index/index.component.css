@@ -1,0 +1,41 @@
+/* Hace que el contenedor cubra toda la pantalla */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Altura completa de la ventana */
+    background-image: url('/assets/images/hero-bg.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Superpone una capa oscura sobre la imagen para mejorar la visibilidad del texto */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según tus preferencias */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  /* Estilos para el texto principal */
+  .hero-text {
+    font-size: 3em; /* Ajusta el tamaño según lo que necesites */
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Estilos para el texto secundario */
+  .hero-subtext {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  

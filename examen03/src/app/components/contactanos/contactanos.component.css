@@ -1,0 +1,50 @@
+.contactanos-container {
+    padding: 50px 0;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  
+  .text-center h2,
+  .text-center p {
+    color: black;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .col-md-6 img {
+    width: 100%;
+    height: auto;
+  }
+  
+  form {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+
+  }
+
+#button {
+    padding: 10px 20px;  /* Espaciado interno en los lados */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;  /* Tamaño de la fuente */
+    cursor: pointer;
+    text-align: center;/* Para mostrar el cursor de mano */
+
+  }
+  
+#button:hover {
+    background-color: #0056b3;
+  }
+    

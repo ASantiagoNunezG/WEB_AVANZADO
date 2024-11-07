@@ -1,0 +1,30 @@
+.marcas-container {
+    background-image: url('/assets/images/servicios-bakcground.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+  }
+  
+  .text-center h2,
+  .text-center p {
+    color: white;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .row {
+    margin-top: 20px;
+  }
+  

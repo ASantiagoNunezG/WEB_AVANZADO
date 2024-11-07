@@ -1,0 +1,30 @@
+.servicios-container {
+    background-image: url('/assets/images/servicios-bakcground.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .icon-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-center h2,
+  .text-center p {
+    color: white;
+  }
