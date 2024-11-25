@@ -137,7 +137,7 @@ export const AddProductoComponent = () => {
                                 <div className='form-group mb-2'>
                                     <label className='form-label'>Proveedor:</label>
                                     <input
-                                        type='numer'
+                                        type='number'
                                         placeholder='Escriba el id del proveedor del producto'
                                         name='txtProveedor'
                                         className='form-control'

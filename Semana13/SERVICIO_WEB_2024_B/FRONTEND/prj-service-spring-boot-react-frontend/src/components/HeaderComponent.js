@@ -8,7 +8,10 @@ export const HeaderComponent =()=>{
                     <div className="container">
                         <ul className="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll">
                             <li className="nav-item">
-                                <a className="nav-link formato01" href="#">Inicio</a>
+                                <a className="nav-link formato01" href="/">Inicio</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link formato01" href="/productos">Productos</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link formato01" href="#">Almacen</a>

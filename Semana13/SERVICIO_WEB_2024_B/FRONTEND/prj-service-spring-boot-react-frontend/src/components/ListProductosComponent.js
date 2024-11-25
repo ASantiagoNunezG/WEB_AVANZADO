@@ -61,7 +61,8 @@ export const ListProductosComponent = () => {
                                 <td>{producto.id}</td>
                                 <td>{producto.nombre}</td>
                                 <td>{producto.descripcion}</td>
-                                <td>{producto.precio} USD</td>
+                                <td>S/.{producto.precio}</td>
+                                
                                 <td>{producto.cantidadInventario}</td>
                                 <td>{producto.categoria ? producto.categoria.nombre : 'N/A'}</td>
                                 <td>{producto.proveedor ? producto.proveedor.nombre : 'N/A'}</td>
