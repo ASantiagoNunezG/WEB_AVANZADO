@@ -1,11 +1,23 @@
-<form (ngSubmit)="login()">
-    <label>
-      Username:
-      <input [(ngModel)]="loginData.username" name="username">
+<div class="login-container">
+  <h2 class="login-title">Inicia Sesión</h2>
+  <form (ngSubmit)="login()" class="login-form">
+    <label class="login-label">
+      Usuario:
+      <input 
+        [(ngModel)]="loginData.username" 
+        name="username" 
+        class="login-input" 
+        placeholder="Ingresa tu usuario">
     </label>
-    <label>
-      Password:
-      <input [(ngModel)]="loginData.password" name="password" type="password">
+    <label class="login-label">
+      Contraseña:
+      <input 
+        [(ngModel)]="loginData.password" 
+        name="password" 
+        type="password" 
+        class="login-input" 
+        placeholder="********">
     </label>
-    <button type="submit">Login</button>
+    <button type="submit" class="login-button">Entrar</button>
   </form>
+</div>

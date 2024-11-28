@@ -1,0 +1,62 @@
+/* Estilos generales */
+.retro-container {
+    font-family: 'Press Start 2P', monospace; /* Fuente retro */
+    background: linear-gradient(135deg, #2b2d42, #8d99ae);
+    color: #edf2f4;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  /* Cabecera */
+  .retro-header {
+    background: #ef233c;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .retro-header h1 {
+    color: #edf2f4;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    color: #ffcb77;
+    margin: 5px 0 0 0;
+  }
+  
+  /* Sección principal */
+  .retro-content {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .retro-content img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .retro-content p {
+    font-size: 14px;
+    color: #8d99ae;
+    margin-top: 10px;
+  }
+  
+  /* Pie de página */
+  .retro-footer {
+    background: #2b2d42;
+    color: #ffcb77;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+  }
+  

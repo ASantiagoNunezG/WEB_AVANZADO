@@ -1,0 +1,65 @@
+/* Contenedor principal */
+.login-container {
+    font-family: 'Press Start 2P', monospace; /* Fuente retro */
+    background: linear-gradient(135deg, #22223b, #4a4e69);
+    color: #f2e9e4;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Título del formulario */
+  .login-title {
+    color: #ff6f61;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Etiquetas */
+  .login-label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #ffcb77;
+    text-align: left;
+  }
+  
+  /* Campos de entrada */
+  .login-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ffcb77;
+    border-radius: 8px;
+    background-color: #4a4e69;
+    color: #edf2f4;
+    font-size: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .login-input::placeholder {
+    color: #c9ada7;
+  }
+  
+  /* Botón de envío */
+  .login-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #edf2f4;
+    background: #ef233c;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background: #ff6f61;
+    transform: scale(1.05);
+  }
+  
