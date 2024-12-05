@@ -1,6 +1,11 @@
 <!-- src/app/components/login/login.component.html -->
 
 <div class="container">
+  <nav>
+    <a routerLink="/login" routerLinkActive="active">Login</a>
+    <a routerLink="/registro" routerLinkActive="active">Registro</a>
+</nav>
+
     <h2>Iniciar sesión</h2>
     <form (ngSubmit)="login()">
       <div>
