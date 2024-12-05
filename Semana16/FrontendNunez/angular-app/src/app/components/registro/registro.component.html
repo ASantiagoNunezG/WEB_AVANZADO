@@ -1,0 +1,22 @@
+<!-- src/app/register/register.component.html -->
+
+<div class="container">
+    <h2>Registro de Usuario</h2>
+    <form (ngSubmit)="register()">
+      <div>
+        <label for="nombres">Usuario:</label>
+        <input type="text" id="nombres" [(ngModel)]="usuario.nombres" name="nombres" required />
+      </div>
+      <div>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="email" [(ngModel)]="usuario.correo" name="correo" required />
+      </div>
+      <div>
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave" [(ngModel)]="usuario.clave" name="clave" required />
+      </div>
+      <button type="submit">Registrar</button>
+    </form>
+    <p *ngIf="message">{{ message }}</p>
+  </div>
+  
