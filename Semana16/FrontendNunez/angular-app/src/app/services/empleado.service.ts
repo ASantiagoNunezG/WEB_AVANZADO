@@ -9,7 +9,7 @@ import { AuthService } from './auth.service'; // Importar AuthService para obten
   providedIn: 'root'
 })
 export class EmpleadoService {
-  private apiUrl = 'http://localhost:8080/empleados'; // Cambiar a tu URL de API
+  private apiUrl = 'http://localhost:8080'; // Cambiar a tu URL de API
 
   constructor(private http: HttpClient, private authService: AuthService) { }
 
@@ -22,8 +22,8 @@ export class EmpleadoService {
   }
 
   // Obtener todos los empleados
-  getEmpleados(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl, { headers: this.getHeaders() });
+  getEmpleados(headers: HttpHeaders): Observable<any> {
+    return this.http.get(`${this.apiUrl}/empleados`, { headers });
   }
 
   // Crear un nuevo empleado
