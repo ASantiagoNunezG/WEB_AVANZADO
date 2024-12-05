@@ -21,23 +21,24 @@ export class EmpleadoService {
     });
   }
 
-  // Obtener todos los empleados
+  // Obtener todos los empleados,
   getEmpleados(headers: HttpHeaders): Observable<any> {
     return this.http.get(`${this.apiUrl}/empleados`, { headers });
   }
 
   // Crear un nuevo empleado
-  createEmpleado(empleado: any): Observable<any> {
-    return this.http.post(this.apiUrl, empleado, { headers: this.getHeaders() });
-  }
+createEmpleado(body: any, headers: HttpHeaders): Observable<any> {
+  return this.http.post(`${this.apiUrl}/empleados`, body, { headers });
+}
 
-  // Actualizar un empleado existente
-  updateEmpleado(id: number, empleado: any): Observable<any> {
-    return this.http.put(`${this.apiUrl}/${id}`, empleado, { headers: this.getHeaders() });
-  }
+// Actualizar un empleado existente
+updateEmpleado(id: number, body: any, headers: HttpHeaders): Observable<any> {
+  return this.http.put(`${this.apiUrl}/empleados/${id}`, body, { headers });
+}
+
 
   // Eliminar un empleado
-  deleteEmpleado(id: number): Observable<any> {
-    return this.http.delete(`${this.apiUrl}/${id}`, { headers: this.getHeaders() });
+  deleteEmpleado(id: number, headers: HttpHeaders): Observable<any> {
+    return this.http.delete(`${this.apiUrl}/empleados/${id}`, { headers });
   }
 }
